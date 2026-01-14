@@ -1,117 +1,134 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BODA - Edgar y Jhoana</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BODA - Edgar y Jhoana</title>
 
-    <!-- Iconos Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: url('fondo_boda2.jpg') no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
-        }
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: url('fondo_boda2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin:0;
+    padding:20px;
+    color:white;
+    text-align:center;
+}
 
-        /* Capa oscura para mejor lectura */
-        .overlay {
-            background: rgba(0,0,0,0.55);
-            min-height: 100vh;
-            padding: 20px;
-            border-radius: 15px;
-        }
+.overlay{
+    background: rgba(0,0,0,0.55);
+    min-height:100vh;
+    padding:20px;
+    border-radius:15px;
+}
 
-        h1 {
-            margin-top: 10px;
-            letter-spacing: 2px;
-        }
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+    max-width:1300px;
+    margin:auto;
+}
 
-        p {
-            margin-bottom: 30px;
-        }
+.photo{
+    position:relative;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 22px rgba(0,0,0,0.7);
+}
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 25px;
-            max-width: 1300px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+.photo img{
+    width:100%;
+    display:block;
+}
 
-        .photo {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.6);
-        }
-
-        .photo img {
-            width: 100%;
-            display: block;
-        }
-
-        /* Botón de descarga */
-        .download {
-            position: absolute;
-            top: 12px;
-            left: 12px;
-            background: rgba(0,0,0,0.65);
-            padding: 8px;
-            border-radius: 50%;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            transition: transform 0.2s;
-        }
-
-        .download:hover {
-            transform: scale(1.1);
-        }
-    </style>
+.download{
+    position:absolute;
+    top:12px;
+    left:12px;
+    background:rgba(0,0,0,0.65);
+    padding:8px;
+    border-radius:50%;
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+}
+</style>
 </head>
 
 <body>
 <div class="overlay">
 
-    <h1>BODA - Edgar y Jhoana</h1>
-    <p>Galería de fotos</p>
+<h1>BODA - Edgar y Jhoana</h1>
+<p>Galería de fotos</p>
 
-    <div class="gallery">
+<div class="gallery">
 
-        <!-- 53 imágenes con botón de descarga -->
-        <div class="photo">
-            <a class="download" href="Kuti_PRO1.jpeg" download><i class="fa-solid fa-download"></i></a>
-            <img src="Kuti_PRO1.jpeg">
-        </div>
+<!-- FOTO 1 A 53 -->
+<div class="photo"><a class="download" href="Kuti_PRO1.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO1.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO2.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO2.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO3.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO3.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO4.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO4.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO5.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO5.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO6.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO6.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO7.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO7.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO8.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO8.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO9.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO9.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO10.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO10.jpeg"></div>
 
-        <div class="photo">
-            <a class="download" href="Kuti_PRO2.jpeg" download><i class="fa-solid fa-download"></i></a>
-            <img src="Kuti_PRO2.jpeg">
-        </div>
+<div class="photo"><a class="download" href="Kuti_PRO11.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO11.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO12.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO12.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO13.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO13.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO14.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO14.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO15.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO15.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO16.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO16.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO17.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO17.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO18.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO18.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO19.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO19.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO20.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO20.jpeg"></div>
 
-        <div class="photo">
-            <a class="download" href="Kuti_PRO3.jpeg" download><i class="fa-solid fa-download"></i></a>
-            <img src="Kuti_PRO3.jpeg">
-        </div>
+<div class="photo"><a class="download" href="Kuti_PRO21.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO21.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO22.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO22.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO23.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO23.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO24.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO24.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO25.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO25.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO26.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO26.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO27.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO27.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO28.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO28.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO29.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO29.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO30.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO30.jpeg"></div>
 
-        <!-- REPITE EL MISMO PATRÓN PARA TODAS -->
+<div class="photo"><a class="download" href="Kuti_PRO31.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO31.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO32.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO32.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO33.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO33.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO34.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO34.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO35.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO35.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO36.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO36.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO37.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO37.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO38.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO38.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO39.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO39.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO40.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO40.jpeg"></div>
 
-        <!-- EJEMPLO FINAL -->
-        <div class="photo">
-            <a class="download" href="Kuti_PRO53.jpeg" download><i class="fa-solid fa-download"></i></a>
-            <img src="Kuti_PRO53.jpeg">
-        </div>
+<div class="photo"><a class="download" href="Kuti_PRO41.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO41.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO42.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO42.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO43.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO43.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO44.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO44.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO45.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO45.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO46.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO46.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO47.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO47.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO48.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO48.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO49.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO49.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO50.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO50.jpeg"></div>
 
-    </div>
+<div class="photo"><a class="download" href="Kuti_PRO51.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO51.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO52.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO52.jpeg"></div>
+<div class="photo"><a class="download" href="Kuti_PRO53.jpeg" download><i class="fa-solid fa-download"></i></a><img src="Kuti_PRO53.jpeg"></div>
 
+</div>
 </div>
 </body>
 </html>
+
