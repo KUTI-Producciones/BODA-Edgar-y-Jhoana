@@ -2,118 +2,250 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Galería de Boda</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestra Boda Civil</title>
+
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<!-- Iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
-    body {
-        margin: 0;
-        font-family: "Georgia", serif;
-        background-image: url("fondo_boda2.jpg"); /* Cambia por el nombre de tu fondo */
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        color: #4a2e2e;
-        text-align: center;
-    }
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: url('fondo_boda2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
 
-    h1 {
-        margin-top: 30px;
-        font-size: 2.8rem;
-        color: #5d3b3b;
-        text-shadow: 1px 1px 4px white;
-    }
+.overlay {
+    background: rgba(0,0,0,0.55);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
 
-    .boton-descarga-todo {
-        margin: 20px auto;
-        padding: 15px 25px;
-        font-size: 1.2rem;
-        background-color: #c79d7c;
-        color: white;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-    }
+/* Título y frase (MISMO ESTILO) */
+.titulo-principal,
+.frase {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
 
-    .galeria {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 25px;
-        padding: 30px;
-        max-width: 1200px;
-        margin: auto;
-    }
+.fecha {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+}
 
-    .contenedor-imagen {
-        background: rgba(255, 255, 255, 0.7);
-        padding: 15px;
-        border-radius: 15px;
-        box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-    }
+/* Nombres */
+.nombres-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
 
-    .contenedor-imagen img {
-        width: 100%;
-        border-radius: 10px;
-        box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
-    }
+.nombre {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.2rem;
+}
 
-    .boton-descargar {
-        margin-top: 10px;
-        padding: 10px 20px;
-        background-color: #8b5e5e;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        text-decoration: none;
-        display: block;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        cursor: pointer;
+.apellido {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+/* Foto principal */
+.foto-principal {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    padding: 12px;
+    border-radius: 25px;
+    border: 4px solid rgba(255,255,255,0.7);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.8);
+}
+
+.foto-principal img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+/* Galería */
+.galeria {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.foto {
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid rgba(255,255,255,0.6);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Descargar */
+.descargar {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(0,0,0,0.6);
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+/* Música */
+.music-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.music-btn {
+    background: rgba(0,0,0,0.7);
+    border: none;
+    color: white;
+    font-size: 26px;
+    padding: 16px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.music-text {
+    margin-top: 6px;
+    font-size: 0.8rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+footer h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes a {
+    color: white;
+    font-size: 1.8rem;
+}
+
+/* Responsive */
+@media(max-width:600px){
+    .nombres-container {
+        flex-direction: column;
+        gap: 20px;
     }
+}
 </style>
-
 </head>
+
 <body>
 
-<h1>Galería de la Boda</h1>
+<!-- Música MP3 -->
+<audio id="musica" autoplay loop>
+    <source src="musica_boda.mp3" type="audio/mpeg">
+</audio>
 
-<!-- Opción A: Botón para descargar TODAS las fotos -->
-<a class="boton-descarga-todo" href="TODAS_FOTOS_BODA.zip" download>
-    Descargar TODAS las fotos
+<!-- Botón música -->
+<div class="music-container">
+    <button class="music-btn" onclick="toggleMusic()">▶</button>
+    <div class="music-text">¡ESCUCHAME!</div>
+</div>
+
+<div class="overlay">
+
+<!-- TÍTULO -->
+<div class="titulo-principal">Nuestra Boda Civil</div>
+<div class="fecha">13 / 01 / 2025</div>
+
+<!-- NOMBRES -->
+<div class="nombres-container">
+    <div>
+        <div class="nombre">Cristian</div>
+        <div class="apellido">Paucar</div>
+    </div>
+    <div>
+        <div class="nombre">Liseth</div>
+        <div class="apellido">Pilamunga</div>
+    </div>
+</div>
+
+<!-- FRASE -->
+<div class="frase">DOS VIDAS, UN SOLO AMOR</div>
+
+<!-- FOTO PRINCIPAL -->
+<div class="foto-principal">
+    <a class="descargar" href="Kuti_PRO (1).jpg" download>
+        <i class="fa-solid fa-download"></i>
+    </a>
+    <img src="Kuti_PRO (1).jpg">
+</div>
+
+<!-- GALERÍA -->
+<div class="galeria">
+<script>
+for(let i=2;i<=24;i++){
+document.write(`
+<div class="foto">
+<a class="descargar" href="Kuti_PRO (${i}).jpg" download>
+<i class="fa-solid fa-download"></i>
 </a>
+<img src="Kuti_PRO (${i}).jpg">
+</div>
+`);
+}
+</script>
+</div>
 
-<div class="galeria" id="galeria"></div>
+<footer>
+<h2>KUTI PRODUCCIONES</h2>
+<div class="redes">
+<a href="https://www.instagram.com/kuti.producciones?igsh=MTMwNHZvODg0c29rcA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com/KUTI.producciones" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.tiktok.com/@kutiproducciones?_r=1&_t=ZM-933avldke52" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+</footer>
+
+</div>
 
 <script>
-    const contenedor = document.getElementById("galeria");
-
-    const totalFotos = 53; 
-    for (let i = 1; i <= totalFotos; i++) {
-        const cont = document.createElement("div");
-        cont.classList.add("contenedor-imagen");
-
-        const img = document.createElement("img");
-        img.src = `Kuti_PRO${i}.jpeg`;
-
-        const boton = document.createElement("a");
-        boton.classList.add("boton-descargar");
-        boton.href = `Kuti_PRO${i}.jpeg`;
-        boton.download = `Kuti_PRO${i}.jpeg`;
-        boton.innerText = "Descargar foto";
-
-        cont.appendChild(img);
-        cont.appendChild(boton);
-
-        contenedor.appendChild(cont);
-    }
+const musica = document.getElementById("musica");
+musica.volume = 0.5;
+let play = true;
+function toggleMusic(){
+    play ? musica.pause() : musica.play();
+    play = !play;
+}
 </script>
 
 </body>
 </html>
-
-
-
-
 
